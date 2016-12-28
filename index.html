@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Test</title>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-    <script src="./quiz.js"></script>
-    <script src="./quiz-tester.js"></script>
+  <meta charset="UTF-8">
+  <title>Test</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
 </head>
 <body>
-    <h3></h3>
-    <h3></h3>
-    <h1></h1>
-    <div>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-    </div>
+  <header>Quiz</header>
+  <div class="wrapper">
+    <main>
+      <div id="questionContainer">
+        <span>Current Question: </span><br>
+        <div id="question">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda fugit atque laborum ab totam unde doloremque aperiam blanditiis tenetur, dicta nemo hic ratione, odit possimus nostrum magni! Incidunt, officiis, dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quis commodi, neque quos, autem laudantium suscipit quidem atque voluptatum vero maxime eius! Nemo, sapiente aspernatur est iusto id voluptatibus numquam.</div>
+      </div>
+      <div id="buttonContainer">
+        <button class="answer" id="0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nulla beatae, in, molestiae inventore repellendus minus hic nisi commodi, ipsum aut. Blanditiis quasi adipisci harum rem molestias excepturi minima minus?</button>
+        <button class="answer" id="1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere voluptatum ipsum hic iure neque sint, atque assumenda. Error quo libero, porro ducimus, in, hic ut voluptatum sequi nam expedita corrupti!</button>
+        <button class="answer" id="2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro fugiat modi iure dignissimos possimus quis sit ex necessitatibus maxime ipsa odit placeat eligendi dolorem voluptas, velit dicta tempora reprehenderit exercitationem.</button>
+        <button class="answer" id="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae incidunt quis iure, sequi accusamus tempora ipsam mollitia est nulla, sint fuga eligendi perspiciatis, magnam quos animi voluptate reprehenderit officiis? Corrupti.</button>
+      </div>
+      <div class="status"><span>ready? player 1!</span></div>
+    </main>
+    <!-- <aside> -->
+      <ul>
+        <li class="player" id="p1">player 1:</li>
+        <li class="player" id="p2">player 2:</li>
+        <li class="score" id="move"></li>
+      </ul>
+    <!-- </aside> -->
+  </div>
+<script src="resources/myQuiz2.js"></script>
+<!-- <script src="./quiz-tester.js"></script> -->
 </body>
 </html>
